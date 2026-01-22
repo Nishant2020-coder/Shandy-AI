@@ -1,64 +1,53 @@
-# 🤖 Real-time AI Chatbot
+Markdown# 🤖 Real-Time AI Chatbot
 
-A real-time, bidirectional AI chatbot built with **Next.js**, **Socket.io**, and **Google Gemini AI**. It features a modern glass-morphism UI, dark mode, message persistence, and Markdown support.
+A full-stack, bi-directional AI chatbot built with **Next.js**, **Socket.io**, and **Google Gemini AI**. This application features a modern, responsive Glassmorphism UI, real-time streaming responses, and persistent chat history.
 
 ## 🚀 Features Implemented
 
-- [x] **Real-time Communication**: Bi-directional Websockets using Socket.io.
-- [x] **AI Integration**: Powered by Google Gemini Pro / Flash models.
-- [x] **Modern UI/UX**: Glass-inspired design, responsive layout, and typing indicators.
-- [x] **Dark/Light Theme**: Persistent theme toggling.
-- [x] **Markdown Support**: Renders code blocks and formatted text nicely.
-- [x] **Local Persistence**: Chat history and theme preferences saved in LocalStorage.
-- [x] **Chat Management**: Clear chat history and copy-to-clipboard functionality.
+The following features have been successfully implemented:
 
-## 🛠️ Tech Stack
+- [x] **Real-time Communication**: Instant bi-directional messaging using Socket.io (WebSockets).
+- [x] **AI Integration**: Powered by Google's Gemini Pro / 1.5-Flash models.
+- [x] **Markdown Support**: AI responses render code blocks, lists, and bold text using `react-markdown`.
+- [x] **Persistent Chat**: Chat history and theme preferences are saved in LocalStorage.
+- [x] **Modern UI/UX**: Custom Glassmorphism design with responsive bubbles and auto-scrolling.
+- [x] **Theme System**: Toggle between Dark Mode and Light Mode.
+- [x] **Chat Management**: Functionality to clear conversation history.
+- [x] **Utility Features**: One-click "Copy to Clipboard" for AI responses.
+- [x] **Typing Indicators**: Visual feedback while the AI is generating a response.
 
-- **Frontend**: Next.js (React), CSS Modules
-- **Backend**: Node.js (Custom Server), Express, Socket.io
-- **AI**: Google Generative AI SDK (@google/generative-ai)
-- **Language**: TypeScript
+## 🛠️ Tech Stack and Libraries
 
-## ⚙️ Setup Instructions
+- **Frontend**: 
+  - Next.js (App Router)
+  - React
+  - CSS Modules (Custom styling)
+  - `react-markdown` (Text formatting)
+  - `socket.io-client` (WebSocket connection)
 
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-link-here>
-   cd ai-chatbot
+- **Backend**: 
+  - Node.js (Custom Server)
+  - Express.js
+  - Socket.io (WebSocket server)
+  - `@google/generative-ai` (Gemini SDK)
+  - `dotenv` (Environment management)
 
-2. **Install Dependencies**
-npm install
+## 📋 Prerequisites
 
-3. **Set up Environmental Variables**
-Create a .env file in the root directory.
+Before running this project, ensure you have the following installed:
+- Node.js (v18 or higher)
+- npm or yarn
 
-Copy the contents of .env.example into .env.
+## ⚙️ Setup Instructions (Step-by-Step)
 
-Add your Google Gemini API Key.
+Follow these steps to set up and run the project locally.
 
- .env file should look like this:
-
-GEMINI_API_KEY=AIzaSy...<your_actual_key>
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/your-username/ai-chatbot.git](https://github.com/your-username/ai-chatbot.git)
+cd ai-chatbot
+2. Install DependenciesInstall all required Node modules:Bashnpm install
+3. Configure Environment VariablesCreate a .env file in the root directory.Copy the contents of .env.example into .env.Add your Google Gemini API Key.Your .env file should look like this:Code snippetGEMINI_API_KEY=AIzaSy...<your_actual_key>
 PORT=3000
-
-4. **Run the Project**
-npm run dev 
-
-5. **Access the App**
-Open your browser and navigate to: http://localhost:3000
-
-**Time Spent on Assignment**
-Total Time: Approx. 5 hours
-
-Backend Setup & Socket Integration: 1.5 hours
-
-AI Integration (Gemini SDK): 1 hour
-
-Frontend UI/UX (Glassmorphism & Responsiveness): 2 hours
-
-Documentation & Polish: 0.5 hours
-
-**Demo Video**
-Check out the video demonstration of the project features here:
-
-
+4. Run the ApplicationStart the development server (runs both the Express backend and Next.js frontend):Bashnpm run dev
+5. Access the AppOpen your browser and navigate to:http://localhost:3000🔑 Environment Variables NeededVariableDescriptionRequired?GEMINI_API_KEYYour Google Generative AI API Key.YesPORTPort for the server to listen on (default: 3000).No⏱️ Time Spent on AssignmentTotal Time: Approx. 5 hoursBackend Setup & Socket Integration: 1.5 hoursAI Integration (Gemini SDK): 1 hourFrontend UI/UX (Glassmorphism & Responsiveness): 2 hoursDocumentation & Polish: 0.5 hours🎥 Demo VideoCheck out the video demonstration of the project features here:[INSERT VIDEO LINK HERE]
