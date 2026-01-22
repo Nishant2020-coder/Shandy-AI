@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🤖 Real-time AI Chatbot
 
-## Getting Started
+A real-time, bidirectional AI chatbot built with **Next.js**, **Socket.io**, and **Google Gemini AI**. It features a modern glass-morphism UI, dark mode, message persistence, and Markdown support.
 
-First, run the development server:
+## 🚀 Features Implemented
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [x] **Real-time Communication**: Bi-directional Websockets using Socket.io.
+- [x] **AI Integration**: Powered by Google Gemini Pro / Flash models.
+- [x] **Modern UI/UX**: Glass-inspired design, responsive layout, and typing indicators.
+- [x] **Dark/Light Theme**: Persistent theme toggling.
+- [x] **Markdown Support**: Renders code blocks and formatted text nicely.
+- [x] **Local Persistence**: Chat history and theme preferences saved in LocalStorage.
+- [x] **Chat Management**: Clear chat history and copy-to-clipboard functionality.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js (React), CSS Modules
+- **Backend**: Node.js (Custom Server), Express, Socket.io
+- **AI**: Google Generative AI SDK (@google/generative-ai)
+- **Language**: TypeScript
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚙️ Setup Instructions
 
-## Learn More
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-link-here>
+   cd ai-chatbot
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install Dependencies**
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Set up Environmental Variables**
+Create a .env file in the root directory.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Copy the contents of .env.example into .env.
 
-## Deploy on Vercel
+Add your Google Gemini API Key.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+ .env file should look like this:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+GEMINI_API_KEY=AIzaSy...<your_actual_key>
+PORT=3000
+
+4. **Run the Project**
+npm run dev 
+
+5. **Access the App**
+Open your browser and navigate to: http://localhost:3000
+
+**Time Spent on Assignment**
+Total Time: Approx. 5 hours
+
+Backend Setup & Socket Integration: 1.5 hours
+
+AI Integration (Gemini SDK): 1 hour
+
+Frontend UI/UX (Glassmorphism & Responsiveness): 2 hours
+
+Documentation & Polish: 0.5 hours
+
+**Demo Video**
+Check out the video demonstration of the project features here:
+
+
