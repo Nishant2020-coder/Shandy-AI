@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Add this to globals.css for the typing animation */
+@keyframes blink {
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+.typing-dot {
+  animation: blink 1.4s infinite both;
+  margin: 0 1px;
+}
+
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+/* Typing Indicator Animation */
+@keyframes blink {
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+.typing-dot {
+  animation: blink 1.4s infinite both;
+  margin: 0 2px;
+  font-size: 2rem; /* Larger dots */
+  line-height: 1rem;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+/* Markdown Styles inside Bubbles */
+.markdown-content p { margin: 0; }
+.markdown-content pre { 
+  background: #2d2d2d; 
+  color: #fff; 
+  padding: 10px; 
+  border-radius: 8px; 
+  overflow-x: auto; 
+}
+.markdown-content code {
+  font-family: monospace;
+  background: rgba(0,0,0,0.1);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
